@@ -1,4 +1,6 @@
 #include "Student.h"
+#include <stdlib.h>
+#include <string.h>
 
 Student* AddStudent(int a, int b, char *c)
 {

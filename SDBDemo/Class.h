@@ -4,4 +4,4 @@ typedef struct Class {
 	int semester;
 }Class;
 
-Student* AddClass(int a, int b, char *c);
+Class* AddClass(int a, int b, char *c);
