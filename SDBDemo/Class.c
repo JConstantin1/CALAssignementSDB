@@ -1,4 +1,6 @@
 #include "Class.h"
+#include <stdlib.h>
+#include <string.h>
 
 Class* AddClass(int a, int b, char *d)
 {

@@ -1,6 +1,10 @@
 #include "Node.h"
+#include "Student.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 struct Node *root = 0;
+
 
 int AddNode(void *item)
 {
@@ -20,13 +24,14 @@ Node* SelectStudent(int a)
 	for(int i = 0; i < Count(); i++)
 	{
             
+/*
 		n = n->next;
-		if(((Student *)n.element) -> student_nr == a)
+		if(((Student*)n.element)->student_nr == a)
                 {
                     return n;
                 }                
+*/
 	}
-        return 2;
 }
 
 Node* SelectNode(int a)

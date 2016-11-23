@@ -4,6 +4,7 @@
 #include "Student.h"
 #include "Node.h"
 
+
 int main()
 {
 	AddNode(AddStudent(20,11111,"Peter"));
@@ -24,6 +25,6 @@ int main()
 	}
 
 	Count();
-	getchar();
+        
 	return 0;
 }
