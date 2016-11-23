@@ -1,8 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-typedef struct Class{
-    
-}Class;
+#include "Class.h"
+
+Student* AddClass(int a, int b, char *c)
+{
+	Class *c;
+	c = (Class*)malloc (sizeof(Class));
+	(*c).id = a;
+	strcpy(c->name, c);
+	//(*s).name = c;
+	c -> semester = b;
+	return c;
+}

@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Class.h</itemPath>
       <itemPath>Node.h</itemPath>
       <itemPath>Student.h</itemPath>
     </logicalFolder>
@@ -43,6 +44,8 @@
       </compileType>
       <item path="Class.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Class.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Node.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Node.h" ex="false" tool="3" flavor2="0">
@@ -75,6 +78,8 @@
         </asmTool>
       </compileType>
       <item path="Class.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Class.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Node.c" ex="false" tool="0" flavor2="0">
       </item>
