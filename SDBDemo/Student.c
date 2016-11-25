@@ -13,3 +13,4 @@ Student* AddStudent(int a, int b, char *c)
 	return s;
 }
 
+

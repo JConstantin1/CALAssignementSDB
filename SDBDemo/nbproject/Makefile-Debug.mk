@@ -35,10 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Assignment.o \
 	${OBJECTDIR}/Class.o \
+	${OBJECTDIR}/Course.o \
 	${OBJECTDIR}/DatabaseHandler.o \
+	${OBJECTDIR}/Enrolment.o \
 	${OBJECTDIR}/Node.o \
 	${OBJECTDIR}/Student.o \
+	${OBJECTDIR}/Teacher.o \
 	${OBJECTDIR}/main.o
 
 
@@ -66,15 +70,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sdbdemo.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sdbdemo ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Assignment.o: Assignment.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Assignment.o Assignment.c
+
 ${OBJECTDIR}/Class.o: Class.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Class.o Class.c
 
+${OBJECTDIR}/Course.o: Course.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Course.o Course.c
+
 ${OBJECTDIR}/DatabaseHandler.o: DatabaseHandler.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DatabaseHandler.o DatabaseHandler.c
+
+${OBJECTDIR}/Enrolment.o: Enrolment.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Enrolment.o Enrolment.c
 
 ${OBJECTDIR}/Node.o: Node.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -85,6 +104,11 @@ ${OBJECTDIR}/Student.o: Student.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Student.o Student.c
+
+${OBJECTDIR}/Teacher.o: Teacher.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Teacher.o Teacher.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
